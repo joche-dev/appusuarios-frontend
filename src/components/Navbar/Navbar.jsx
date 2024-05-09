@@ -8,7 +8,7 @@ export default function Navigation() {
     <Navbar expand="md">
       <Container>
         <Navbar.Brand>
-          <img src="./public/logo.png" alt="Logo" />
+          <img src="./logo.png" alt="Logo" />
           App Usuarios</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav" className="justify-content-end">
