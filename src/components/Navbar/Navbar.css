@@ -1,0 +1,29 @@
+.navbar {
+    border-bottom: 1px solid #eee;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-brand img {
+    width: 3rem;
+    margin-right: .5rem;
+}
+
+.navbar-nav .link {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.3rem;
+  margin:  0.5rem;
+  color: #030303;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  border-bottom: 2px solid #fff;
+}
+
+.navbar-nav .link:hover,
+.navbar-nav .active {
+  color: #2a9d8f;
+  border-bottom: 2px solid #2a9d8f;
+}
