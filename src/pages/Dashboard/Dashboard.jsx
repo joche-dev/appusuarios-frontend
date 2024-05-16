@@ -24,12 +24,16 @@ export default function Dashboard() {
       <h1 className="mb-5">Lista de Usuarios</h1>
       <NewUser />
       <Row xs={1} md={2} lg={3} xl={4} className="g-3">
-        {loading && <p>Loading...</p>}
-        {users?.map((user, index) => (
-          <Col key={index}>
-            <CardUser user={user} />
-          </Col>
-        ))}
+        {loading && <p>Cargando usuarios...</p>}
+        {users?.length === 0 ? (
+          <p>No hay usuarios registrados.</p>
+        ) : (
+          users?.map((user, index) => (
+            <Col key={index}>
+              <CardUser user={user} />
+            </Col>
+          ))
+        )}
       </Row>
       <ToastContainer />
     </Container>

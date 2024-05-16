@@ -13,7 +13,7 @@ export default function CardUser({ user }) {
             <i className="bi bi-envelope"></i> {user.email}
           </span>
           <span>
-            <i className="bi bi-telephone"></i> {'+56' + user.phone}
+            <i className="bi bi-telephone"></i> {'+56 ' + user.phone.slice(0,1) + ' ' + user.phone.slice(1,5) + ' ' + user.phone.slice(5)}
           </span>
           <span>
             <i className="bi bi-geo-alt"></i>{' '}
